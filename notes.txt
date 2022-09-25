@@ -26,7 +26,7 @@ td,th{
 
 6. Next, let's add a remove button. Done! Still in the state though, only removed from DOM.
 
-7. Now I've gotta find a way to 
-
+7. Now I've gotta find a way to calculate the salaries then divide them by 12 and see if it's over $20,000 or not.
+I wasn't sure how to add a last empty row like they did. I tried this.<tr><td colspan="6"></td></tr>. Adding it to the HTML or JS.append part but neither worked.
 
 

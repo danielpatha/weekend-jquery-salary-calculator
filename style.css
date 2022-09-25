@@ -26,6 +26,7 @@ input {
     margin:15px;
     padding: 2px 20px;
     border-radius: 5px;
+    margin-left: 645px;
 }
 .rBtn{
     padding: 2px 20px;
@@ -34,9 +35,20 @@ input {
 table,td,th{
     border: 1px solid black;
 }
+
 td,th{
     padding: 8px 14px;
 }
+
 th{ 
     background-color:lightgray;
+}
+
+footer{
+    position: relative;
+}
+
+.totalM{
+text-align:center;
+
 }

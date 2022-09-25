@@ -3,6 +3,7 @@ console.log('in client.js');
 $(document).ready(onReady);
 
 let eArray =[];
+let monthlyTotal = 0;
 
 function onReady() {
     console.log("DOM is loaded!");
@@ -28,7 +29,8 @@ $('#lnInput').val('');
 $('#idInput').val('');
 $('#titleInput').val('');
 $('#asInput').val('');
-
+    
+    monthlyCost();
     renderToState();
 }
 
@@ -46,12 +48,30 @@ function renderToState(){
          <td>
          <button class="rBtn">Delete</button>
          </td>
-         </tr>
+
         `);
+        
     }
 
 }
 
  function removeFunc(){
     $(this).parent().parent().remove();
+}
+
+
+function monthlyCost(){
+    let mValue = 0;
+    console.log('in monthlyCost');
+  
+    for(let person of eArray){
+        mValue += Number(person.annualSalary);
+        monthlyTotal = (mValue / 12).toFixed(2);
+        $('.totalM').text(`Total Monthly:${monthlyTotal}`);
+
+        if(monthlyTotal >= 20000){
+        $('.totalM').css("background-color", "red");
+        }
+
+}
 }
