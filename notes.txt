@@ -24,9 +24,9 @@ td,th{
 
 5. Let's get the submit button info to the DOM now. Done!
 
-6. Next, let's add a remove button.
+6. Next, let's add a remove button. Done! Still in the state though, only removed from DOM.
 
-
+7. Now I've gotta find a way to 
 
 
 

@@ -7,6 +7,7 @@ let eArray =[];
 function onReady() {
     console.log("DOM is loaded!");
     $('.eForm').on('submit', submitInfo);
+    $('#eTable').on('click', '.rBtn', removeFunc);
 }
 
 function submitInfo(event){
@@ -32,11 +33,11 @@ $('#asInput').val('');
 }
 
 function renderToState(){
-    // $('#eTable').empty();
+     $('#eTable').empty();
 
     for(let e of eArray){
         $('#eTable').append(`
-        <tr>
+        <tr class = newTr>
          <td>${e.firstName}</td>
          <td>${e.lastName}</td>
          <td>${e.ID}</td>
@@ -48,4 +49,9 @@ function renderToState(){
          </tr>
         `);
     }
+
+}
+
+ function removeFunc(){
+    $(this).parent().parent().remove();
 }
