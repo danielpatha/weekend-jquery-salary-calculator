@@ -67,11 +67,11 @@ function monthlyCost(){
     for(let person of eArray){
         mValue += Number(person.annualSalary);
         monthlyTotal = (mValue / 12).toFixed(2);
-        $('.totalM').text(`Total Monthly:${monthlyTotal}`);
+        $('.totalM').text(`Total Monthly:$${monthlyTotal}`);
 
         if(monthlyTotal >= 20000){
         $('.totalM').css("background-color", "red");
-        }
 
+}
 }
 }
