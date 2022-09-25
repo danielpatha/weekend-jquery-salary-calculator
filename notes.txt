@@ -7,8 +7,20 @@ Raw Notes:
 Steps:
 1. Step up the header using HTML and CSS. Done!
 
-2.Set up the inputs and buttons within the <main>
+2.Set up the inputs and buttons within the <main> Done!
+This is we use input instead of text area since that is used for multiple lines of info.
+Couldn't figure out how to get the button to the right.
 
+3. Make the bare bones of the table. Done!
+Had to put this is CSS to make the lines of the table actually show. It just words before LOL.
+table,td,th{
+    border: 1px solid black;
+}
+td,th{
+    padding: 8px 14px;
+}
+
+4.Now let's do the logic to make this button submit on to the table.
 
 
 
