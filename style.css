@@ -1,0 +1,17 @@
+/* Step one, let's just get the header looking similar. */
+/* This is the closest it'll get, let's */
+h1{
+background-color: gray;
+color:white;
+font-family:Arial, Helvetica, sans-serif;
+font-weight:normal; 
+text-align:center;
+padding:40px;
+margin: 0px;
+}
+
+h2{
+font-family:Arial, Helvetica, sans-serif;
+font-weight: normal;
+}
+

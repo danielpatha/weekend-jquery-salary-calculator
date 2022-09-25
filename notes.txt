@@ -1,0 +1,15 @@
+Raw Notes:
+
+
+
+
+
+Steps:
+1. Step up the header using HTML and CSS. Done!
+
+2.Set up the inputs and buttons within the <main>
+
+
+
+
+
