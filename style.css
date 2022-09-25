@@ -21,11 +21,14 @@ input {
    border-color: black;
 }
 
-button{
+.sBtn{
     font-size: 20px;
     margin:15px;
     padding: 2px 20px;
     border-radius: 5px;
+}
+.rBtn{
+    padding: 2px 20px;
 }
 
 table,td,th{

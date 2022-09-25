@@ -20,7 +20,12 @@ td,th{
     padding: 8px 14px;
 }
 
-4.Now let's do the logic to make this button submit on to the table.
+4.Now let's do the logic to make this button submit on to the table. Done!
+
+5. Let's get the submit button info to the DOM now. Done!
+
+6. Next, let's add a remove button.
+
 
 
 

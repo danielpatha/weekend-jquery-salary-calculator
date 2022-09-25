@@ -15,11 +15,37 @@ function submitInfo(event){
     let newObject = {
         firstName: $('#fnInput').val(),
         lastName: $('#lnInput').val(),
-        ID: $('#IDInput').val(),
+        ID: $('#idInput').val(),
         Title: $('#titleInput').val(),
         annualSalary: $('#asInput').val()
     };
     eArray.push(newObject);
     console.log('eArray is now ',eArray);
 
+$('#fnInput').val('');
+$('#lnInput').val('');
+$('#idInput').val('');
+$('#titleInput').val('');
+$('#asInput').val('');
+
+    renderToState();
+}
+
+function renderToState(){
+    // $('#eTable').empty();
+
+    for(let e of eArray){
+        $('#eTable').append(`
+        <tr>
+         <td>${e.firstName}</td>
+         <td>${e.lastName}</td>
+         <td>${e.ID}</td>
+         <td>${e.Title}</td>
+         <td>${e.annualSalary}</td>
+         <td>
+         <button class="rBtn">Delete</button>
+         </td>
+         </tr>
+        `);
+    }
 }
